@@ -57,6 +57,7 @@ class VentLine:
             seabed_array[self.min_coords()[1] : self.max_coords()[1]+1, 
                         self.from_pt.x] += 1
         
+        
 vent_lines = [VentLine(line) for line in open('./input.txt').readlines()]
 seabed_size_x = max([v.max_coords()[0] + 1 for v in vent_lines])
 seabed_size_y = max([v.max_coords()[1] + 1 for v in vent_lines])
