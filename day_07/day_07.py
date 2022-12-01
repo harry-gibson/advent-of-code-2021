@@ -13,7 +13,9 @@ for i in np.arange(crab_positions.max()):
         least_fuel_pos = i
 
 print(f"Part 1: {least_fuel}")
-
+# also: the optimal position is mathematically the median value, so we can do:
+# med_pos = int(np.median(crab_positions))
+# np.abs(crab_positions - med_pos).sum()
 
 # PART 2
 least_fuel = np.inf
